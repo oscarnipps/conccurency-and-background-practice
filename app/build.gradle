@@ -36,6 +36,17 @@ android {
 dependencies {
     def rxandroid_version = '2.1.1'
     def rxjava_version = '2.2.7'
+    def room_version = "2.2.6"
+    def rxjava_adapter_version = '2.3.0'
+    def archLifecycleVersion = "2.2.0"
+    def work_version = "2.5.0"
+    def reactiveStreamsVersion = "2.2.0"
+
+    // (work manager Java only)
+    implementation "androidx.work:work-runtime:$work_version"
+
+    // work manager - RxJava2 support
+    implementation "androidx.work:work-rxjava2:$work_version"
 
     //rxjava
     implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"

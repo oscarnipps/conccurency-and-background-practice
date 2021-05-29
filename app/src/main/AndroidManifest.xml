@@ -15,15 +15,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".DetailsActivity"/>
-
-        <activity android:name=".BroadcastActivity"/>
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".backgroundworkers.onetimebackgroundwork.OneTimeBackgroundWorkerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".DetailsActivity" />
+
+        <activity android:name=".BroadcastActivity" />
+
+        <activity android:name=".MainActivity">
+
         </activity>
 
         <receiver
@@ -35,21 +40,18 @@
                 <action android:name="android.intent.action.AIRPLANE_MODE" />
             </intent-filter>
         </receiver>
-
         <receiver
-            android:exported="false"
+            android:name=".RebootBroadcastReceiver"
             android:enabled="false"
-            android:name=".RebootBroadcastReceiver">
+            android:exported="false">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
-        <receiver android:name=".AlarmBroadcastReceiver"
-            android:exported="false"
+        <receiver
+            android:name=".AlarmBroadcastReceiver"
             android:enabled="true"
-            />
-
+            android:exported="false" />
     </application>
 
 </manifest>
