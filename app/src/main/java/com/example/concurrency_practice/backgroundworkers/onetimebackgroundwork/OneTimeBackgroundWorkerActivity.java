@@ -106,4 +106,6 @@ public class OneTimeBackgroundWorkerActivity extends AppCompatActivity {
                 .setRequiresBatteryNotLow(true)
                 .build();
     }
+
+
 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "819680371563",
+    "project_id": "concurrency-practice",
+    "storage_bucket": "concurrency-practice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819680371563:android:f5811b1d527dee8765222e",
+        "android_client_info": {
+          "package_name": "com.example.concurrency_practice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819680371563-49osg1gfqev3ulm8j5jmid8p0bc4plpe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwdn_ZpsJo2choElDiqpWbKOqSywuRE0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819680371563-49osg1gfqev3ulm8j5jmid8p0bc4plpe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
